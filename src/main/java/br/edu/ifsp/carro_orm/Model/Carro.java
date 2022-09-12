@@ -1,9 +1,10 @@
 package main.java.br.edu.ifsp.carro_orm.Model;
 
-@Entity
+@Entity // tabela no sql
 public class Carro {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
+    @Id // chave primária
+    @GeneratedValue(strategy = GenerationType.AUTO) // chave primária gerada automaticamente
     private Long id;
     private String nome;
     private String cor;
